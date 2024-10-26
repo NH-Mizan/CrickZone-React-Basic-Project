@@ -1,4 +1,4 @@
-
+import { TbCoinFilled } from "react-icons/tb";
 import PropTypes from "prop-types"
 
 const Header = ({coin}) => {
@@ -13,11 +13,13 @@ const Header = ({coin}) => {
            <ul className="flex justify-between gap-8 text-xl">
              <li>Home</li>
              <li>Player</li>
-             <li>Contract</li>
+             <li>Teams</li>
+             <li>Schedules</li>
              
             
            </ul>
-             <button className="text-xl border-2 border-lime-400 px-2 rounded-lg bg-white">$ {coin} Coin</button>
+             <button className="flex items-center gap-2 text-xl border-2 border-lime-400 px-2 rounded-lg bg-white"> {coin} Coin  <TbCoinFilled />
+</button>
          </div>
         </div>
        </div>

@@ -17,11 +17,11 @@ const Banner = ({handleCoin}) => {
                     <div className="my-4">
                     <img src="https://i.ibb.co.com/G7rR2R6/banner-main.png" alt="" />
                     </div>
-                        <h1 className="mb-5 text-5xl font-bold">Cricket Legends in Action: Feel the Heat</h1>
+                        <h1 className="mb-5 text-5xl font-bold">Cricket Legends in Action Feel the Heat</h1>
                         <p className="mb-5">
                         Elite Cricket Club - Your Home for Cricket Enthusiasts | Team Roster, Match Schedules, Stats & Updates | Join Us for the Love of Cricket and Experience the Spirit of the Game!
                         </p>
-                        <button onClick={()=>handleCoin(500000)}  className="btn btn-warning">Claim Free Credit</button>
+                        <button onClick={()=>handleCoin(1500000)}  className="btn btn-warning">Claim Free Credit</button>
                     </div>
                 </div>
             </div>

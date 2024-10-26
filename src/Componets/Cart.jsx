@@ -1,7 +1,12 @@
 import PropTypes from "prop-types"
+import { FaUser } from "react-icons/fa6";
+import { FaFlag } from "react-icons/fa";
+
+
+
 
 const Cart = ({ player,handleSelectedPlayers }) => {
-    const {img, name, country, rating, battingStyle, price,allRounder} = player;
+    const {img, name, country, rating, price, role , battingType, bowlingType } = player;
    
     return (
         <div className="">
@@ -13,25 +18,25 @@ const Cart = ({ player,handleSelectedPlayers }) => {
                 </figure>
                 <div className="card-body">
                    <div>
-                   <h2 className="card-title font-bold text-2xl mb-4">{name}</h2>
-                   <div className="grid grid-cols-2 items-center">
-                   <p className="text-lg">{country}</p>
-                   <button className="btn">{allRounder?"All Rounder":"No all rounder"}</button>
+                   <h2 className="card-title font-bold text-2xl mb-4"><FaUser />{name}</h2>
+                   <div className="grid grid-cols-2 items-center mb-4">
+                   <p className="text-lg flex items-center gap-2"><FaFlag /> {country}</p>
+                   <button className="btn">{role}</button>
                    </div>
                    </div>
                     <hr></hr>
                     <div className="grid grid-cols-2 text-lg mt-6 ">
-                    <p className="font-bold">Rating : </p>
+                    <p className="font-bold">Rating  </p>
                     <p>{rating}</p>
 
                     </div>
                     <div className="grid grid-cols-2 text-lg mt-6 ">
-                    <p className="font-bold">Batting Style :</p>
-                    <p> {battingStyle}</p>
+                    <p >{battingType}</p>
+                    <p> {bowlingType}</p>
 
                     </div>
                     <div className="grid grid-cols-2 text-lg mt-6 items-center ">
-                    <p className="font-bold">Price : {price}</p>
+                    <p>Price :$ {price}</p>
                     <button onClick={()=>handleSelectedPlayers(player)} className="btn btn-outline btn-accent">Choose Player</button>
                     
 

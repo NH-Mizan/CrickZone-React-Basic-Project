@@ -1,12 +1,12 @@
 import PropTypes from "prop-types"
 
-const Selection = ({handleIsActive, selectedPlayers}) => {
+const Selection = ({handleIsActive, selectedPlayers,handleDelete}) => {
  console.log(selectedPlayers)
   
     return (
         <div>
             
-            <h2 className="text-2xl font-bold mb-12">Selects Player:  {selectedPlayers.length}/6</h2>
+            <h2 className="text-2xl font-bold mb-12">Selects Player:( {selectedPlayers.length}/6 )</h2>
           {
            selectedPlayers.map((player)=>{
           return(
@@ -16,11 +16,16 @@ const Selection = ({handleIsActive, selectedPlayers}) => {
                <img src={player.img} alt="" className="w-32 rounded-xl"/>
               <div>
               <h2 className="text-2xl font-bold mb-4 ">{player.name}</h2>
-              <p className="text-xl">{player.battingStyle}</p>
+              <p className="text-xl">{player.country}</p>
               </div>
+              <div>
+                <p className="text-xl">{player.role}</p>
+                <p className="text-xl mt-8">Price : $ {player.price}</p>
+                </div>
+           
                </div>
                <div>
-                <button className="btn btn-primary" >Delete</button>
+                <button onClick={()=>handleDelete(player.id)} className="btn btn-primary" >Delete</button>
                </div>
             </div>
         </div>
@@ -34,7 +39,8 @@ const Selection = ({handleIsActive, selectedPlayers}) => {
 };
 Selection.propTypes={
  handleIsActive:PropTypes.func,
- selectedPlayers:PropTypes.object
+ selectedPlayers:PropTypes.object,
+ handleDelete:PropTypes.func
 
 }
 export default Selection;

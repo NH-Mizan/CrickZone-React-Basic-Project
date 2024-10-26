@@ -1,64 +1,68 @@
 [
   {
     "id": 1,
-    "img": "https://i.ibb.co.com/wNnrdpX/download-3.jpg",
     "name": "Liton Das",
     "country": "Bangladesh",
-    "rating": 9.8,
-    "battingStyle": "Right-hand bat",
-    "price": 150000,
-    "allRounder": false
+    "img": "https://i.ibb.co/wNnrdpX/download-3.jpg",
+    "role": "Batsman",
+    "rating": 5,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 150000
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co.com/ckkBchD/images-2.jpg",
-    "name": "Sakib al Hasan",
+    "name": "Shakib Al Hasan",
     "country": "Bangladesh",
-    "rating": 9.5,
-    "battingStyle": "Right-hand bat",
-    "price": 130000,
-    "allRounder": true
+    "img": "https://i.ibb.co/ckkBchD/images-2.jpg",
+    "role": "All-Rounder",
+    "rating": 4.9,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm orthodox",
+    "price": 130000
   },
   {
     "id": 3,
-    "img": "https://i.ibb.co.com/Stf38PW/download-1.jpg",
     "name": "Babar Azam",
     "country": "Pakistan",
-    "rating": 9.7,
-    "battingStyle": "Right-hand bat",
-    "price": 140000,
-    "allRounder": true
+    "img": "https://i.ibb.co/Stf38PW/download-1.jpg",
+    "role": "Batsman",
+    "rating": 5,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 140000
   },
   {
     "id": 4,
-    "img": "https://i.ibb.co.com/Tggv4qd/download-2.jpg",
     "name": "David Warner",
     "country": "Australia",
-    "rating": 9.2,
-    "battingStyle": "Left-hand bat",
-    "price": 125000,
-    "allRounder": false
+    "img": "https://i.ibb.co/Tggv4qd/download-2.jpg",
+    "role": "All Rounder",
+    "rating": 4.2,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm legbreak",
+    "price": 125000
   },
   {
     "id": 5,
-    "img": "https://i.ibb.co.com/NrQcPPr/download.jpg",
     "name": "Kane Williamson",
     "country": "New Zealand",
-    "rating": 9.6,
-    "battingStyle": "Right-hand bat",
-    "price": 135000,
-    "allRounder": false
+    "img": "https://i.ibb.co/NrQcPPr/download.jpg",
+    "role": "Batsman",
+    "rating": 4.9,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 135000
   },
   {
     "id": 6,
-    "img": "https://i.ibb.co.com/wrhFQ68/images-1.jpg",
     "name": "Steve Smith",
     "country": "Australia",
-    "rating": 9.4,
-    "battingStyle": "Right-hand bat",
-    "price": 1200000,
-    "allRounder": true
+    "img": "https://i.ibb.co/wrhFQ68/images-1.jpg",
+    "role": "Bowler",
+    "rating": 5 ,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legbreak",
+    "price": 1200000
   }
 ]
-
-  

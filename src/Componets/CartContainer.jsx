@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 
 
-const CartContainer = ({ handleIsActive, isActive, handleSelectedPlayers, selectedPlayers}) => {
+const CartContainer = ({ handleIsActive, isActive, handleSelectedPlayers, selectedPlayers, handleDelete}) => {
     return (
         
         <div className="mx-auto w-10/12  ">
@@ -20,7 +20,7 @@ const CartContainer = ({ handleIsActive, isActive, handleSelectedPlayers, select
                 </div>
             </div>
             
-       {isActive.cart?<AllCartContainer handleSelectedPlayers={handleSelectedPlayers}></AllCartContainer>:<Selection handleIsActive={handleIsActive} selectedPlayers={selectedPlayers} ></Selection>}
+       {isActive.cart?<AllCartContainer handleSelectedPlayers={handleSelectedPlayers}></AllCartContainer>:<Selection handleIsActive={handleIsActive} selectedPlayers={selectedPlayers} handleDelete={handleDelete}></Selection>}
         </div>
     );
 };
@@ -28,7 +28,8 @@ CartContainer.propTypes={
     handleIsActive:PropTypes.func,
     isActive:PropTypes.object,
     handleSelectedPlayers:PropTypes.func,
-    selectedPlayers:PropTypes.object
+    selectedPlayers:PropTypes.object,
+    handleDelete:PropTypes.func
 }
 
 

@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div className="relative pt-72">
-            <div className=" w-10/12 ml-[8%] border-2 border-white-100 mt-[-200px] rounded-xl absolute p-4">
+            <div className=" w-10/12 ml-[8%] border-2 border-white-100 mt-[-200px] rounded-xl absolute bg-red-100  backdrop-blur bg-opacity-30 p-4">
                 <div className="border-2 border-red-300 rounded-xl">
                     <div
                         className="hero bg-cover bg-no-repeat rounded-xl " style={{
@@ -19,11 +19,11 @@ const Footer = () => {
                                     <p className="text-xl mt-8">Get the latest updates and news right in your inbox!</p>
                                     <fieldset className="form-control w-80 mt-6">
 
-                                        <div className="join items-center">
+                                        <div className="join text-green-400 items-center">
                                             <input
                                                 type="text"
                                                 placeholder="Enter Your Email.com"
-                                                className="input px-20 input-bordered join-item" />
+                                                className="input px-20 input-bordered text-lime-400 join-item" />
                                             <button className="btn btn-primary join-item">Subscribe</button>
                                         </div>
                                     </fieldset>
@@ -39,21 +39,21 @@ const Footer = () => {
                 <div className="items-center flex justify-center mb-20">
                     <img src="https://i.ibb.co.com/QfTfpG2/logo-footer.png" alt="" />
                 </div>
-                <footer className="footer mx-auto w-10/12 text-white flex justify-around">
+                <footer className="footer mx-auto w-10/12 text-white flex justify-around ">
                     <nav >
-                        <h6 className="footer-title">About Us</h6>
-                        <p>We are a passionate team dedicated to providing <br></br> the best services to our customers.</p>
+                        <h6 className="footer-title text-xl">About Us</h6>
+                        <p className="text-xl ">We are a passionate team dedicated to providing <br></br> the best services to our customers.</p>
                     </nav>
                     <nav>
-                        <h6 className="footer-title">Quick Links</h6>
+                        <h6 className="footer-title text-xl">Quick Links</h6>
                         <a className="link link-hover">Home</a>
                         <a className="link link-hover">Players</a>
-                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Schedules</a>
 
                     </nav>
 
                     <form>
-                        <h6 className="footer-title">Subscribe</h6>
+                        <h6 className="footer-title text-xl">Subscribe</h6>
                         <p>Subscribe to our newsletter for the latest updates.</p>
                         <fieldset className="form-control w-80 mt-6">
 
