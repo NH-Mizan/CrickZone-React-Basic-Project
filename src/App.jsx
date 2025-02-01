@@ -57,6 +57,7 @@ function App() {
   // Choose player category
 
   const [coin, setCoin] = useState(0)
+
   const byePlayer = (pr) => {
     if (coin >= pr) {
       const validation = setCoin(coin - pr)
@@ -83,46 +84,50 @@ function App() {
 
   const handleSelectedPlayers = (player) => {
 
+
+
     const isexist = selectedPlayers.find((p) => p.id == player.id);
+    // selected 2 time no add validation
+    if (!isexist) {
+      // all coin ar ceye player price bes hole
+      if (coin > player.price) {
+
+        const newPlayers = [...selectedPlayers, player]
+        // 6 pelayer ar ceye besi nile error validation        
+        if (newPlayers.length <= 6) {
+          toast.success(`Selected !! ${player.name} successfull your`, {
+            position: "top-center"
+
+          });
+          byePlayer(player.price)
+
+          setSelectedPlayers(newPlayers);
+          return
+
+        } else {
+          return toast.error(" Selected player is Maximum!", {
+            position: "top-center",
+          });
+
+        }
 
 
 
+      } else {
+        return toast.error(" Don't have available coin. !", {
+          position: "top-center",
+        });
 
-    if (isexist) {
+      }
+    } else {
+      return toast.error("player already selected!", { position: "top-center", })
 
-      toast.error("player already selected!", { position: "top-center", })
-      return
     }
 
 
-    if (coin <= player.price) {
-      toast.error(" Don't have available coin. !", {
-        position: "top-center",
-      });
-      return
-    }
 
 
-    // 6 player validation 
-
-    // if (player.length < 6) {
-    //   toast.error("No selection player available. !", {
-    //     position: "top-center",
-    //   });
-    //   return
-
-    // }
-
-    else {
-      toast.success(" player Selected successfull", {
-        position: "top-center"
-
-      });
-      byePlayer(player.price)
-      const newPlayers = [...selectedPlayers, player]
-      setSelectedPlayers(newPlayers);
-    }
-
+   
 
 
 

@@ -1,16 +1,15 @@
-# Name of your project : 
-## CrickZone
+# Name of your project :  CrickZone
 
 
 # A brief description :
-### CrickZone is a dynamic platform for cricket enthusiasts, providing in-depth profiles of international players. Each profile includes essential details like the player's image, name, country, role, rating, batting style, bowling style, and price. CrickZone aims to deliver a complete experience for fans, helping them access player stats and profiles in one place. The user-friendly interface ensures quick navigation, making it ideal for cricket fans and analysts alike
+ CrickZone is a dynamic platform for cricket enthusiasts, providing in-depth profiles of international players. Each profile includes essential details like the player's image, name, country, role, rating, batting style, bowling style, and price. CrickZone aims to deliver a complete experience for fans, helping them access player stats and profiles in one place. The user-friendly interface ensures quick navigation, making it ideal for cricket fans and analysts alike
 
 
 # Technologies used :
-####  React – For building the user interface and handling state management.
-#### Tailwind CSS  – For responsive and streamlined styling.
-#### React-Toastify – For providing user notifications.
-#### Fake fetch API – For handling API requests to fetch player data.
+ React – For building the user interface and handling state management.
+Tailwind CSS  – For responsive and streamlined styling.
+ React-Toastify – For providing user notifications.
+Fake fetch API – For handling API requests to fetch player data.
 
 
 

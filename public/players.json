@@ -63,6 +63,51 @@
     "rating": 5 ,
     "battingType": "Right-hand bat",
     "bowlingType": "Right-arm legbreak",
-    "price": 1200000
+    "price": 120000
+  },
+  {
+    "id": 7,
+    "name": "Virat Koholi",
+    "country": "India",
+    "img": "https://i.ibb.co.com/X767QqX/17kohli1.jpg",
+    "role": "All Rounder",
+    "rating": 4.5 ,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "price": 130000
+  },
+  {
+    "id": 8,
+    "name": "Jos Buttler",
+    "country": "England",
+    "img": "https://i.ibb.co.com/0scS1ZQ/download-8.jpg",
+    "role": "Batsman",
+    "rating": 4.8,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "price": 115000
+  },
+  {
+    "id": 9,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "img": "https://i.ibb.co.com/ZKpmW15/download-9.jpg",
+    "role": "Bowler",
+    "rating": 4.9,
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legbreak",
+    "price": 110000
+  },
+  {
+    "id": 10,
+    "name": "Ben Stokes",
+    "country": "England",
+    "img": "https://i.ibb.co.com/wyxpmzC/download-10.jpg",
+    "role": "All-Rounder",
+    "rating": 4.7,
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm medium",
+    "price": 125000
   }
+
 ]

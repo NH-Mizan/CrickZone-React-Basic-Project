@@ -3,7 +3,7 @@ import Cart from "./cart";
 import PropTypes from "prop-types"
 
 
-const AllCartContainer = ({handleSelectedPlayers}) => {
+const AllCartContainer = ({ handleSelectedPlayers }) => {
     const [players, setPlayers] = useState([]);
 
 
@@ -19,7 +19,7 @@ const AllCartContainer = ({handleSelectedPlayers}) => {
     return (
         <div>
             <h2 className="text-2xl font-bold mb-12">
-            Available Players
+                Available Players
             </h2>
             <div className="grid grid-cols-3 gap-4">
 
@@ -31,7 +31,7 @@ const AllCartContainer = ({handleSelectedPlayers}) => {
         </div>
     );
 };
-AllCartContainer.propTypes={
-    handleSelectedPlayers:PropTypes.func
+AllCartContainer.propTypes = {
+    handleSelectedPlayers: PropTypes.func
 }
 export default AllCartContainer;
